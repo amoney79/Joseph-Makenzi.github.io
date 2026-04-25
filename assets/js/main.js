@@ -193,4 +193,37 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Dynamically set skill progress bar widths
+   */
+  function initSkillProgress() {
+    const progressContainers = document.querySelectorAll('.skill-progress-container');
+    progressContainers.forEach(container => {
+      const levelElement = container.querySelector('.skill-level');
+      const progressBar = container.querySelector('.progress-bar');
+      
+      if (levelElement && progressBar) {
+        const levelText = levelElement.textContent.trim().toLowerCase();
+        let percentage = 0;
+        
+        if (levelText.includes('basic')) {
+          percentage = 40;
+        } else if (levelText.includes('intermediate')) {
+          percentage = 70;
+        } else if (levelText.includes('advanced')) {
+          percentage = 90;
+        } else if (levelText.includes('expert')) {
+          percentage = 100;
+        }
+        
+        // Use a short timeout to trigger CSS animation on load
+        setTimeout(() => {
+          progressBar.style.width = percentage + '%';
+          progressBar.setAttribute('aria-valuenow', percentage);
+        }, 200);
+      }
+    });
+  }
+  window.addEventListener('load', initSkillProgress);
+
 })();

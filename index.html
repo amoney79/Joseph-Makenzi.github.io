@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&family=Domine:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +29,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  
+
 </head>
 
 <body class="index-page">
@@ -48,9 +50,9 @@
           <li><a href="#resume">Resume</a></li>
           <li><a href="#services">My Skills</a></li>
 
-                </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+        </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -59,7 +61,8 @@
         <a href="https://x.com/Ma_ck_enzie_J" class="twitter"><i class="bi bi-twitter-x"></i></a>
         <a href="https://wa.me/254736608635" class="whatsApp"><i class="bi bi-whatsapp"></i></a>
         <a href="https://t.me/Kenzie06" class="telegram"><i class="bi bi-telegram"></i></a>
-        <a href="https://www.linkedin.com/in/joseph-makenzi-600047279/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/joseph-makenzi-600047279/" class="linkedin"><i
+            class="bi bi-linkedin"></i></a>
       </div>
 
     </div>
@@ -70,12 +73,38 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/hero-bg.jpg" alt="Hero Background" data-aos="fade-in" class="hero-bg-img">
+      <div class="hero-overlay"></div>
 
-      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
-        <h2>Joseph Makenzi</h2>
-        <p>I'm a Telecommunication Engineer</p>
-        <p>I'm a Java Back-End Developer</p>
+      <div class="container hero-container" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="hero-title">Joseph Makenzi</h2>
+        <p class="hero-subtitle">Bridging the gap between software and infrastructure</p>
+
+        <div class="professions-grid">
+          <a href="developer.html" class="profession-card glass-panel text-decoration-none"
+            style="display: block; color: inherit;" data-aos="fade-right" data-aos-delay="200">
+            <div class="card-glow"></div>
+            <div class="icon-wrapper">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <h3>Developer</h3>
+            <span class="badge">Fullstack Java</span>
+            <p>Architecting robust backend systems and dynamic user interfaces with modern Java technologies.</p>
+          </a>
+
+          <a href="engineer.html" class="profession-card glass-panel text-decoration-none"
+            style="display: block; color: inherit;" data-aos="fade-left" data-aos-delay="300">
+            <div class="card-glow"></div>
+            <div class="icon-wrapper">
+              <i class="bi bi-router"></i>
+            </div>
+            <h3>Engineer</h3>
+            <span class="badge">IT & Telecommunication</span>
+            <p>Designing, implementing, and optimizing large-scale network infrastructures and communication systems.
+            </p>
+          </a>
+        </div>
+
         <a href="#about" class="btn-scroll" title="Scroll Down"><i class="bi bi-chevron-down"></i></a>
       </div>
 
@@ -88,48 +117,69 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">About me</span>
         <h2>About Me</h2>
-        
+
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Telecommunication Engineer</h2>
-            <p class="fst-italic py-3">
-              <p>Results-driven Telecommunications and Information Technology professional  in designing,implementing, and managing large-scale communication systems and IT infrastructures.<br>
-                 Skilled in leveraging technical knowledge to optimize network performance, enhance data security, and improve operational efficiency in dynamic,high-stakes environments.<br>
-
-                    </p>
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>9 July 2002</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254 74107 2427</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kilifi</span></li>
-                </ul>
+        <div class="about-big-card p-4 p-md-5">
+          <div class="row gy-4 justify-content-center align-items-center">
+            <div class="col-lg-4 text-center">
+              <img src="assets/img/profile-img.jpg" class="img-fluid profile-image" alt="">
+            </div>
+            <div class="col-lg-8 content">
+              <h2>Dual Professional: Developer & Engineer</h2>
+              <div class="text-card mt-4">
+                <p class="fst-italic mb-0">
+                  <i class="bi bi-quote" style="color: var(--accent-color); font-size: 1.2rem; margin-right: 5px;"></i>
+                  Results-driven professional excelling in both Fullstack Java Development and Telecommunications.
+                  Experienced in designing robust communication systems and architecting scalable backend solutions to
+                  drive operational efficiency in dynamic environments.
+                </p>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Degree</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>mackenziejoseph396@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
+
+              <div class="info-cards-container">
+                <div class="info-card">
+                  <div class="icon-box"><i class="bi bi-broadcast"></i></div>
+                  <div class="info-content">
+                    <h5>Telecom</h5>
+                    <span>Network Optimization & RF</span>
+                  </div>
+                </div>
+                <div class="info-card">
+                  <div class="icon-box"><i class="bi bi-pc-display-horizontal"></i></div>
+                  <div class="info-content">
+                    <h5>Information Technology</h5>
+                    <span>Infrastructure & Systems</span>
+                  </div>
+                </div>
+                <div class="info-card">
+                  <div class="icon-box"><i class="bi bi-filetype-java"></i></div>
+                  <div class="info-content">
+                    <h5>Java Development</h5>
+                    <span>Backend & Enterprise APIs</span>
+                  </div>
+                </div>
+                <div class="info-card">
+                  <div class="icon-box"><i class="bi bi-globe"></i></div>
+                  <div class="info-content">
+                    <h5>Web Development</h5>
+                    <span>Fullstack Apps & UI/UX</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-card">
+                <p class="mb-0">
+                  <i class="bi bi-check2-circle"
+                    style="color: var(--accent-color); font-size: 1.2rem; margin-right: 5px;"></i>
+                  Proficient in troubleshooting, system integrations, and deploying scalable solutions for
+                  telecommunications networks, with a strategic and collaborative approach in aligning IT solutions to
+                  achieve overarching business objectives.
+                </p>
               </div>
             </div>
-            <p class="py-3">
-              Proficient in troubleshooting, system integrations,and deploying scalable solutions for telecommunications networks ,strategic thinking, and collaborative approach in aligning IT solutions with business objectives
-            </p>
           </div>
         </div>
-
-      </div>
 
     </section><!-- /About Section -->
 
@@ -140,69 +190,74 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">My Resume</span>
         <h2>My Resume</h2>
-        
+
       </div><!-- End Section Title -->
 
       <div class="container">
+        <div class="about-big-card p-4 p-md-5" data-aos="fade-up" data-aos-delay="50">
+          <div class="row">
 
-        <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Sumary</h3>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+              <div class="resume-item pb-0">
+                <h4>Joseph Makenzi</h4>
+                <p><em>Innovative and deadline-driven Java Developer with 1+ years of experience designing and
+                    developing.</em></p>
+                <ul>
+                  <li>Kenya Kilifi 127,Kenya .</li>
+                  <li>(254) 741-072427</li>
+                  <li>mackenziejoseph396@gmail.com</li>
+                </ul>
+              </div><!-- Edn Resume Item -->
 
-            <div class="resume-item pb-0">
-              <h4>Joseph Makenzi</h4>
-              <p><em>Innovative and deadline-driven Java Developer with 1+ years of experience designing and developing.</em></p>
-              <ul>
-                <li>Kenya Kilifi 127,Kenya .</li>
-                <li>(254) 741-072427</li>
-                <li>mackenziejoseph396@gmail.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Degree of Telecommunications and Information Technology </h4>
+                <h5>2022 - 2026</h5>
+                <p><em>Pwani University,Kilifi, Kenya</em></p>
+                <p>Results-driven Telecommunications and Information Technology professional in designing,implementing,
+                  and managing large-scale communication systems and IT infrastructures.<br>
+                  Skilled in leveraging technical knowledge to optimize network performance, enhance data security, and
+                  improve operational efficiency in dynamic,high-stakes environments </p>
+              </div><!-- Edn Resume Item -->
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Degree of Telecommunications and Information Technology </h4>
-              <h5>2022 - 2026</h5>
-              <p><em>Pwani University,Kilifi, Kenya</em></p>
-              <p>Results-driven Telecommunications and Information Technology professional  in designing,implementing, and managing large-scale communication systems and IT infrastructures.<br>
-                Skilled in leveraging technical knowledge to optimize network performance, enhance data security, and improve operational efficiency in dynamic,high-stakes environments </p>
-            </div><!-- Edn Resume Item -->
 
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Telecommunication Engineer</h4>
+
+                <p><em>Kilifi,Kenya. </em></p>
+                <ul>
+                  <li>Network Setup & Troubleshooting; Configuring routers, modems, and switches; troubleshooting
+                    connectivity issues.</li>
+                  <li>RF (Radio Frequency) Basics; Signal transmission, antennas, and wireless communication. </li>
+                  <li>Fiber Optic Installations; Splicing and maintaining fiber optic cables.</li>
+                  <li>Basic Satellite & Mobile Communication</li>
+                  <li>VoIP & Telephony Systems</li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Information Technology</h4>
+
+                <p><em>Kilifi,Kenya.</em></p>
+                <ul>
+                  <li>Networking Basics; Setting up LAN, WLAN, and managing network security (firewalls, VLANs).</li>
+                  <li>Software Development; Writing basic scripts or applications in Java for IT automation.</li>
+                  <li>Cybersecurity Awareness; Implementing basic security measures such as firewalls, encryption, and
+                    ethical hacking.</li>
+                  <li>Database Management; Working with MySQL, PostgreSQL, or SQLite for data storage.</li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+
+            </div>
 
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Telecommunication Engineer</h4>
-
-              <p><em>Kilifi,Kenya. </em></p>
-              <ul>
-                <li>Network Setup & Troubleshooting; Configuring routers, modems, and switches; troubleshooting connectivity issues.</li>
-                <li>RF (Radio Frequency) Basics; Signal transmission, antennas, and wireless communication. </li>
-                <li>Fiber Optic Installations; Splicing and maintaining fiber optic cables.</li>
-                <li>Basic Satellite & Mobile Communication</li>
-                <li>VoIP & Telephony Systems</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Information Technology</h4>
-             
-              <p><em>Kilifi,Kenya.</em></p>
-              <ul>
-                <li>Networking Basics; Setting up LAN, WLAN, and managing network security (firewalls, VLANs).</li>
-                <li>Software Development; Writing basic scripts or applications in  Java for IT automation.</li>
-                <li>Cybersecurity Awareness; Implementing basic security measures such as firewalls, encryption, and ethical hacking.</li>
-                <li>Database Management; Working with MySQL, PostgreSQL, or SQLite for data storage.</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
         </div>
-
       </div>
 
     </section><!-- /Resume Section -->
@@ -214,51 +269,259 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">My Skills</span>
         <h2>My Skills</h2>
-       
+
       </div><!-- End Section Title -->
 
       <div class="container">
+        <div class="about-big-card p-4 p-md-5" data-aos="fade-up" data-aos-delay="50">
+          <h3 class="resume-title mb-4" data-aos="fade-up">Technical Skills</h3>
 
-        <div class="row gy-4">
+          <div class="row gy-4">
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Java Developer</a></h4>
-              <p>Intermediate</p>
+            <!-- Skill 1 -->
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="bi bi-filetype-java"></i></div>
+                <h4>Java Development</h4>
+                <div class="skill-progress-container">
+                  <div class="d-flex align-items-center mb-1">
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Skill Item -->
+
+            <!-- Skill 2 -->
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="bi bi-database"></i></div>
+                <h4>Database Management</h4>
+                <div class="skill-progress-container">
+                  <div class="d-flex align-items-center mb-1">
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Skill Item -->
+
+            <!-- Skill 3 -->
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="bi bi-pc-display"></i></div>
+                <h4>Operating Systems</h4>
+                <div class="skill-progress-container">
+                  <div class="d-flex align-items-center mb-1">
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Skill Item -->
+
+            <!-- Skill 4 -->
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+                <h4>HTML, CSS, JS</h4>
+                <div class="skill-progress-container">
+                  <div class="d-flex align-items-center mb-1">
+                    <span class="skill-level">Expert</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Skill Item -->
+
+            <!-- Skill 5 -->
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="500">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="bi bi-hdd-network"></i></div>
+                <h4>Networking</h4>
+                <div class="skill-progress-container">
+                  <div class="d-flex align-items-center mb-1">
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Skill Item -->
+
+            <!-- Skill 6 -->
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="600">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="bi bi-shield-lock"></i></div>
+                <h4>Cybersecurity</h4>
+                <div class="skill-progress-container">
+                  <div class="d-flex align-items-center mb-1">
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Skill Item -->
+
+            <!-- Skill 7 -->
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="700">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="bi bi-lightning-charge"></i></div>
+                <h4>Fiber Optic Installations</h4>
+                <div class="skill-progress-container">
+                  <div class="d-flex align-items-center mb-1">
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Skill Item -->
+
+            <!-- Skill 8 -->
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="800">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="bi bi-broadcast-pin"></i></div>
+                <h4>Signal Transmission</h4>
+                <div class="skill-progress-container">
+                  <div class="d-flex align-items-center mb-1">
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Skill Item -->
+
+          </div>
+
+          <!-- Soft Skills Section -->
+          <h3 class="resume-title mb-4 mt-5" data-aos="fade-up">Soft Skills</h3>
+          <div class="soft-skills-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="soft-skill-badge"><i class="bi bi-chat-dots"></i> Communication</div>
+            <div class="soft-skill-badge"><i class="bi bi-list-check"></i> Organization</div>
+            <div class="soft-skill-badge"><i class="bi bi-lightbulb"></i> Critical Thinking</div>
+            <div class="soft-skill-badge"><i class="bi bi-puzzle"></i> Problem-solving</div>
+            <div class="soft-skill-badge"><i class="bi bi-clock-history"></i> Time management</div>
+            <div class="soft-skill-badge"><i class="bi bi-arrow-repeat"></i> Adaptability</div>
+            <div class="soft-skill-badge"><i class="bi bi-shield-check"></i> Confidentiality and discretion</div>
+            <div class="soft-skill-badge"><i class="bi bi-person-check"></i> Professional Etiquette</div>
+            <div class="soft-skill-badge"><i class="bi bi-people"></i> Team Collaboration</div>
+            <div class="soft-skill-badge"><i class="bi bi-inbox"></i> Managing a client's inbox</div>
+            <div class="soft-skill-badge"><i class="bi bi-calendar3"></i> Managing a client's calendar</div>
+            <div class="soft-skill-badge"><i class="bi bi-calendar-date"></i> Scheduling</div>
+            <div class="soft-skill-badge"><i class="bi bi-search"></i> Internet research</div>
+            <div class="soft-skill-badge"><i class="bi bi-file-earmark-slides"></i> Creating slides / presentations
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Database Administrator</a></h4>
-              <p>Intermediate</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Operating Systems</a></h4>
-              <p>Intermediate</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="" class="stretched-link">HTML, CSS , Javascript</a></h4>
-              <p>Basic</p>
-            </div>
-          </div><!-- End Service Item -->
-
+            <div class="soft-skill-badge"><i class="bi bi-kanban"></i> Project management</div>
+            <div class="soft-skill-badge"><i class="bi bi-airplane"></i> Travel research and booking</div>
+            <div class="soft-skill-badge"><i class="bi bi-map"></i> Creating travel Itineraries</div>
+            <div class="soft-skill-badge"><i class="bi bi-keyboard"></i> Data entry</div>
+            <div class="soft-skill-badge"><i class="bi bi-receipt"></i> Expense tracking</div>
+            <div class="soft-skill-badge"><i class="bi bi-ui-radios"></i> Authoring effective surveys</div>
+            <div class="soft-skill-badge"><i class="bi bi-list-ol"></i> Creating meeting agendas</div>
+            <div class="soft-skill-badge"><i class="bi bi-journal-richtext"></i> Taking meeting minutes / notes</div>
+            <div class="soft-skill-badge"><i class="bi bi-mic"></i> Transcribing</div>
+            <div class="soft-skill-badge"><i class="bi bi-envelope-paper"></i> Writing Correspondence</div>
+            <div class="soft-skill-badge"><i class="bi bi-archive"></i> Electron Record Management</div>
+            <div class="soft-skill-badge"><i class="bi bi-headset"></i> Customer Service</div>
+            <div class="soft-skill-badge"><i class="bi bi-diagram-3"></i> Stakeholder management</div>
+          </div>
         </div>
 
       </div>
 
     </section><!-- /Services Section -->
-          
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">My Certifications</span>
+        <h2>Certifications</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Certification Card 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a href="#" target="_blank" class="cert-card d-block">
+              <div class="cert-image-holder">
+                <i class="bi bi-award cert-icon"></i>
+                <div class="cert-overlay">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                  <span>View Certificate</span>
+                </div>
+              </div>
+              <div class="cert-info">
+                <h4>Fullstack Java Developer</h4>
+                <p>Placeholder Institution</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Certification Card 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <a href="#" target="_blank" class="cert-card d-block">
+              <div class="cert-image-holder">
+                <i class="bi bi-patch-check cert-icon"></i>
+                <div class="cert-overlay">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                  <span>View Certificate</span>
+                </div>
+              </div>
+              <div class="cert-info">
+                <h4>Telecommunication Engineering</h4>
+                <p>Placeholder Institution</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Certification Card 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <a href="#" target="_blank" class="cert-card d-block">
+              <div class="cert-image-holder">
+                <i class="bi bi-shield-check cert-icon"></i>
+                <div class="cert-overlay">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                  <span>View Certificate</span>
+                </div>
+              </div>
+              <div class="cert-info">
+                <h4>Cybersecurity Fundamentals</h4>
+                <p>Placeholder Institution</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Certifications Section -->
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -270,64 +533,66 @@
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="about-big-card p-4 p-md-5">
 
-        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Address</h3>
-              <p>Pwani University,80108-Kilifi,Kenya</p>
-            </div>
-          </div><!-- End Info Item -->
+            <div class="col-lg-4">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Address</h3>
+                <p>Pwani University,80108-Kilifi,Kenya</p>
+              </div>
+            </div><!-- End Info Item -->
 
-          <div class="col-lg-4">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center info-item-borders">
-              <i class="bi bi-telephone"></i>
-              <h3>Call Me</h3>
-              <p>+2 5474 10724 27</p>
-            </div>
-          </div><!-- End Info Item -->
+            <div class="col-lg-4">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center info-item-borders">
+                <i class="bi bi-telephone"></i>
+                <h3>Call Me</h3>
+                <p>+254 797 372 922</p>
+              </div>
+            </div><!-- End Info Item -->
 
-          <div class="col-lg-4">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center">
-              <i class="bi bi-envelope"></i>
-              <h3>Email Me</h3>
-              <p>mackenziejoseph396@gmail.com</p>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-            </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
+            <div class="col-lg-4">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Me</h3>
+                <p>mackenziejoseph396@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
 
           </div>
-        </form><!-- End Contact Form -->
+
+          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+              </div>
+
+              <div class="col-md-6 ">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+              </div>
+
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                <button type="submit">Send Message</button>
+              </div>
+
+            </div>
+          </form><!-- End Contact Form -->
+        </div>
 
       </div>
 
@@ -338,7 +603,7 @@
   <footer id="footer" class="footer position-relative dark-background">
     <div class="container">
       <h3 class="sitename">Joseph Makenzi<br></h3>
-      
+
       <div class="social-links d-flex justify-content-center">
         <a href="https://x.com/Ma_ck_enzie_J"><i class="bi bi-twitter-x"></i></a>
         <a href="https://wa.me/254741072427"><i class="bi bi-whatsapp"></i></a>
@@ -362,7 +627,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
