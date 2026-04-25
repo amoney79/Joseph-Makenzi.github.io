@@ -771,6 +771,7 @@ section:not(.hero),
   font-weight: 800 !important;
   background: linear-gradient(45deg, #ffffff, var(--accent-color));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0 !important;
   text-transform: uppercase;
@@ -1905,10 +1906,4 @@ section:not(.hero),
   margin-right: 8px;
   color: var(--accent-color);
 }
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+
