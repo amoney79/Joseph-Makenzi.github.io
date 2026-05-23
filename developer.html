@@ -68,13 +68,24 @@
     .project-img {
       width: 100%;
       height: 200px;
-      object-fit: cover;
       background: #e2e8f0;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #94a3b8;
       font-size: 3rem;
+      overflow: hidden;
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card-wrapper:hover .project-img img {
+      transform: scale(1.05);
     }
 
     .project-content {
@@ -464,7 +475,7 @@
                     <span class="live-dot"></span> Live Site
                   </div>
                   <div class="project-img">
-                    <i class="bi bi-cup-hot"></i>
+                    <img src="assets/img/malaika-house.png" alt="Malaika House & Tours">
                   </div>
                   <div class="project-content">
                     <h4>Malaika House & Tours</h4>
@@ -488,11 +499,11 @@
                     <span class="live-dot"></span> Live Site
                   </div>
                   <div class="project-img">
-                    <i class="bi bi-laptop"></i>
+                    <img src="assets/img/virtual-assistant-porfolio.png" alt="Virtual Assistant Portfolio">
                   </div>
                   <div class="project-content">
                     <h4>Virtual Assistant Portfolio</h4>
-                    <p>The official personal brand portal representing a developer and IT/telecommunications engineer. Fully optimized for speed, semantic markup, and visual interactions.</p>
+                    <p>The official personal brand portal representing a Virtual Assistant. Fully optimized for speed, semantic markup, and visual interactions.</p>
                     <div class="tech-stack">
                       <span class="tech-tag">HTML5 & CSS3</span>
                       <span class="tech-tag">JavaScript</span>
@@ -512,7 +523,7 @@
                     <span class="live-dot"></span> Live Site
                   </div>
                   <div class="project-img">
-                    <i class="bi bi-heart-pulse"></i>
+                    <img src="assets/img/hospital-website.png" alt="Customized MedCare Website">
                   </div>
                   <div class="project-content">
                     <h4>Customized MedCare Website</h4>
