@@ -107,6 +107,92 @@
       font-size: 0.8rem;
       font-weight: 600;
     }
+
+    .project-card-wrapper {
+      text-decoration: none !important;
+      display: block;
+      height: 100%;
+      color: inherit;
+    }
+
+    .project-card-wrapper:hover {
+      color: inherit;
+    }
+
+    .project-card {
+      position: relative;
+    }
+
+    .project-badge-live {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(59, 130, 246, 0.9);
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+
+    .project-card-wrapper:hover .project-badge-live {
+      background: #2563eb;
+      transform: scale(1.05);
+    }
+
+    .project-badge-code {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(15, 23, 42, 0.9);
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+
+    .project-card-wrapper:hover .project-badge-code {
+      background: #0f172a;
+      transform: scale(1.05);
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #10b981;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 8px #10b981;
+      animation: pulse-dot 1.5s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      }
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+      }
+      100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
+    }
   </style>
 </head>
 
@@ -300,61 +386,146 @@
 
             <!-- Project 1 -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="project-card">
-                <div class="project-img">
-                  <i class="bi bi-hospital"></i>
-                </div>
-                <div class="project-content">
-                  <h4>Hospital Management System</h4>
-                  <p>A comprehensive JavaFX desktop application designed to streamline hospital operations, including
-                    patient registration, doctor scheduling, and medical records management.</p>
-                  <div class="tech-stack">
-                    <span class="tech-tag">Java</span>
-                    <span class="tech-tag">JavaFX</span>
-                    <span class="tech-tag">MySQL</span>
+              <a href="https://github.com/Joseph-Makenzi/Hospital-Management-System" target="_blank" class="project-card-wrapper">
+                <div class="project-card">
+                  <div class="project-badge-code">
+                    <i class="bi bi-github"></i> Source Code
+                  </div>
+                  <div class="project-img">
+                    <i class="bi bi-hospital"></i>
+                  </div>
+                  <div class="project-content">
+                    <h4>Hospital Management System</h4>
+                    <p>A comprehensive JavaFX desktop application designed to streamline hospital operations, including
+                      patient registration, doctor scheduling, and medical records management.</p>
+                    <div class="tech-stack">
+                      <span class="tech-tag">Java</span>
+                      <span class="tech-tag">JavaFX</span>
+                      <span class="tech-tag">MySQL</span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <!-- Project 2 -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="project-card">
-                <div class="project-img">
-                  <i class="bi bi-cart3"></i>
-                </div>
-                <div class="project-content">
-                  <h4>Rentify</h4>
-                  <p>A robust Full-Stack Web Application for an E-House Finding platform featuring user authentication,
-                    house product catalog
-                    management, shopping/renting cart logic, and rent/payment processing.</p>
-                  <div class="tech-stack">
-                    <span class="tech-tag">HTML & CSS</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">MongoDB</span>
+              <a href="https://github.com/Joseph-Makenzi/Rentify" target="_blank" class="project-card-wrapper">
+                <div class="project-card">
+                  <div class="project-badge-code">
+                    <i class="bi bi-github"></i> Source Code
+                  </div>
+                  <div class="project-img">
+                    <i class="bi bi-house-door"></i>
+                  </div>
+                  <div class="project-content">
+                    <h4>Rentify</h4>
+                    <p>A robust Full-Stack Web Application for an E-House Finding platform featuring user authentication,
+                      house product catalog management, renting cart logic, and rent payment simulation.</p>
+                    <div class="tech-stack">
+                      <span class="tech-tag">HTML & CSS</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">Node.js</span>
+                      <span class="tech-tag">MongoDB</span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <!-- Project 3 -->
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="project-card">
-                <div class="project-img">
-                  <i class="bi bi-graph-up"></i>
-                </div>
-                <div class="project-content">
-                  <h4>Inventory Tracking Dashboard</h4>
-                  <p>A full-stack web application that allows businesses to monitor stock levels in real-time, generate
-                    insightful reports, and automate reordering.</p>
-                  <div class="tech-stack">
-                    <span class="tech-tag">JavaFX</span>
-                    <span class="tech-tag">Java</span>
-                    <span class="tech-tag">MongoDB</span>
+              <a href="https://github.com/Joseph-Makenzi/Inventory-Tracking-Dashboard" target="_blank" class="project-card-wrapper">
+                <div class="project-card">
+                  <div class="project-badge-code">
+                    <i class="bi bi-github"></i> Source Code
+                  </div>
+                  <div class="project-img">
+                    <i class="bi bi-graph-up"></i>
+                  </div>
+                  <div class="project-content">
+                    <h4>Inventory Tracking Dashboard</h4>
+                    <p>A full-stack enterprise dashboard system allowing businesses to monitor real-time inventory levels, generate insightful sales charts, and trigger automated alerts.</p>
+                    <div class="tech-stack">
+                      <span class="tech-tag">JavaFX</span>
+                      <span class="tech-tag">Java</span>
+                      <span class="tech-tag">MongoDB</span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <a href="https://joseph-makenzi.github.io/brew-haven/" target="_blank" class="project-card-wrapper">
+                <div class="project-card">
+                  <div class="project-badge-live">
+                    <span class="live-dot"></span> Live Site
+                  </div>
+                  <div class="project-img">
+                    <i class="bi bi-cup-hot"></i>
+                  </div>
+                  <div class="project-content">
+                    <h4>Malaika House & Tours</h4>
+                    <p>A high-end, responsive Tour company & Accommodation website featuring elegant typography, HSL-tailored colors, dynamic menu selection, reservation forms, and interactive reviews.</p>
+                    <div class="tech-stack">
+                      <span class="tech-tag">HTML5 & CSS3</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">Bootstrap</span>
+                      <span class="tech-tag">AOS</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <a href="https://joseph-makenzi.github.io/" target="_blank" class="project-card-wrapper">
+                <div class="project-card">
+                  <div class="project-badge-live">
+                    <span class="live-dot"></span> Live Site
+                  </div>
+                  <div class="project-img">
+                    <i class="bi bi-laptop"></i>
+                  </div>
+                  <div class="project-content">
+                    <h4>Virtual Assistant Portfolio</h4>
+                    <p>The official personal brand portal representing a developer and IT/telecommunications engineer. Fully optimized for speed, semantic markup, and visual interactions.</p>
+                    <div class="tech-stack">
+                      <span class="tech-tag">HTML5 & CSS3</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">Bootstrap</span>
+                      <span class="tech-tag">AOS</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <a href="https://joseph-makenzi.github.io/medcare-portal/" target="_blank" class="project-card-wrapper">
+                <div class="project-card">
+                  <div class="project-badge-live">
+                    <span class="live-dot"></span> Live Site
+                  </div>
+                  <div class="project-img">
+                    <i class="bi bi-heart-pulse"></i>
+                  </div>
+                  <div class="project-content">
+                    <h4>Customized MedCare Website</h4>
+                    <p>A professional healthcare service website offering scheduling, doctor profile cards, interactive services menus, and direct communication modules with users.</p>
+                    <div class="tech-stack">
+                      <span class="tech-tag">HTML5 & CSS3</span>
+                      <span class="tech-tag">JavaScript</span>
+                      <span class="tech-tag">Bootstrap</span>
+                      <span class="tech-tag">AOS</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
 
           </div>
